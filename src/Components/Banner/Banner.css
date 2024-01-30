@@ -1,0 +1,17 @@
+.Banner {
+    background-color: #2A254B;
+    color: white;
+    padding: 10px 3%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 30px;
+}
+
+.Banner .banner-text {
+    justify-self: center;
+}
+
+.Banner img {
+    justify-self: right;
+
+}

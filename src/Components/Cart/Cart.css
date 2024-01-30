@@ -1,0 +1,10 @@
+.Cart .cart-container {
+    background-color: #F9F9F9;
+    padding: 50px 10%;
+    box-sizing: border-box;
+}
+
+.Cart .cart-container .title-cart {
+    color: #2A254B;
+    font-size: 36px;
+}

@@ -1,0 +1,18 @@
+.All-products {
+
+}
+
+.All-products .header-image {
+    width: 100%;
+    /*color: white;*/
+    padding: 90px 30px 70px;
+    box-sizing: border-box;
+    /*background-image: url("../../../assets/image/AllProcuctsHeaders.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
+
+.All-products .shop {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}

@@ -1,0 +1,69 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+}
+
+           /*PRESENTATION*/
+.Home .pres-cont {
+    height: 90vh;
+    display: flex;
+}
+
+.Home .pres-cont .presentation {
+    align-self: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color: #2A254B;
+    color: white;
+}
+
+.Home .pres-cont .presentation .presentation-container {
+    font-size: 32px;
+    padding: 60px 60px;
+    box-sizing: border-box;
+}
+
+.Home .pres-cont .presentation .view-collection-btn {
+    font-size: 18px;
+    background-color: rgba(249, 249, 249, 0.15);
+    width: max-content;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 1s;
+    margin:  10px 10px 10px 0;
+}
+
+.Home .pres-cont .presentation .view-collection-btn:hover {
+    scale: 1.1;
+    background-color: rgba(249, 249, 249, 0.4);
+}
+
+.Home .pres-cont .presentation .presentation-container .new-era {
+    font-size: 18px;
+}
+
+        /*NEW PRODUCT*/
+.Home .new-products {
+    padding: 50px 5%;
+    box-sizing: border-box;
+}
+
+
+       /*POPULAR PRODUCT*/
+.Home .popular-products {
+    padding: 50px 5%;
+    box-sizing: border-box;
+}
+
+       /*STORY*/
+
+.story-container {
+    display: flex;
+}
+
+.story-container .story {
+    padding: 20px 5%;
+    box-sizing: border-box;
+}

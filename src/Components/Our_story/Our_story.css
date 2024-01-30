@@ -1,0 +1,20 @@
+.Our_story .articles .title{
+    padding: 30px 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Our_story .articles .articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.Our_story .articles .articles-grid img {
+    width: 100%;
+}
+
+.Our_story .articles .article {
+    padding: 20px 5% 20px 3%;
+    box-sizing: border-box;
+}

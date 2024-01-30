@@ -1,0 +1,19 @@
+.join-container {
+    background-color: #F9F9F9;
+    padding: 50px 5%;
+    box-sizing: border-box;
+}
+
+.join-container .join {
+    padding: 30px;
+    background-color: white;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.join-container .join .email {
+    display: flex;
+    justify-content: center;
+    /*margin: auto;*/
+}

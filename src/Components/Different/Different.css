@@ -1,0 +1,18 @@
+.different-container {
+    padding: 50px 5%;
+    box-sizing: border-box;
+}
+
+.different-container h2 {
+
+}
+
+.different-container .different {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.different-container .different img {
+    width: 25px;
+}

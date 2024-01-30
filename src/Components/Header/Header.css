@@ -1,0 +1,80 @@
+.header-top {
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.header-top .user-container img {
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.header-top a {
+    color: #22202E;
+    text-decoration: none;
+}
+
+.header-top .logo {
+    font-family: ClashDisplay-Regular;
+}
+
+.header-bottom {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.header-bottom a {
+    color: #22202E;
+    text-decoration: none;
+}
+
+.header-bottom .category-item {
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.header-bottom .category-item:hover {
+    border-bottom: 1px solid black;
+}
+
+.Header-shot {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Header-shot a {
+    color: #22202E;
+    text-decoration: none;
+}
+
+.Header-shot .logo-text-shot {
+    font-family: ClashDisplay-Regular;
+}
+
+.Header-shot .menu-container {
+    justify-self: right;
+}
+
+.Header-shot .menu-container img {
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.Header-shot .menu {
+    grid-column: 1/3;
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 41px;
+    background-color: whitesmoke;
+}
