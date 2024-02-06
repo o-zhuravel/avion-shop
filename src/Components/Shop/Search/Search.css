@@ -1,0 +1,27 @@
+.Search .shop {
+    display: grid;
+    /*grid-template-columns: 20% 77%;*/
+    /*grid-column-gap: 3%;*/
+    /*padding: 50px 20px 20px 20px;*/
+    grid-template-rows: minmax(10vh, 20vh) minmax(40vh, max-content);
+    min-height: 100vh;
+}
+
+
+
+.Search .shop .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Search .backToAllProducts {
+    padding: 10px;
+    color: #22202E;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Search .backToAllProducts:hover {
+    color: #4E4D93;
+}

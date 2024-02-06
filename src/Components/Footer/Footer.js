@@ -6,6 +6,7 @@ import skype from '../../assets/image/logo--skype.svg';
 import twitter from '../../assets/image/logo--twitter.svg';
 import pinterest from '../../assets/image/logo--pinterest.svg';
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
 
@@ -47,20 +48,19 @@ const Footer = () => {
                         <div>Best sellers</div>
                         <div>Recently viewed</div>
                         <div>Popular this week</div>
-                        <div>All products</div>
+                        <Link to={'/all'}><div>All products</div></Link>
                     </div>
                     <div>
                         <div className='item-name'>Categories</div>
-                        <div>Crockery</div>
-                        <div>Furniture</div>
-                        <div>Tableware</div>
-                        <div>Plant pots</div>
-                        <div>Chairs</div>
-                        <div>Crockery</div>
+                        <Link to={'/all'}><div>All</div></Link>
+                        <Link to={'/clothes'}><div>Clothes</div></Link>
+                        <Link to={'/shoes'}><div>Shoes</div></Link>
+                        <Link to={'/furniture'}><div>Furniture</div></Link>
+                        <Link to={'/electronics'}><div>Electronics</div></Link>
                     </div>
                     <div>
                         <div className='item-name'>Our company</div>
-                        <div>About us</div>
+                        <Link to={'/home'}><div>About us</div></Link>
                         <div>Vacancies</div>
                         <div>Contact us</div>
                         <div>Privacy</div>
@@ -77,12 +77,11 @@ const Footer = () => {
                     <div className='Footer-shot-container'>
                         <div>
                             <div className='item-name'>Categories</div>
-                            <div>Crockery</div>
-                            <div>Furniture</div>
-                            <div>Tableware</div>
-                            <div>Plant pots</div>
-                            <div>Chairs</div>
-                            <div>Crockery</div>
+                            <Link to={'/all'}><div>All</div></Link>
+                            <Link to={'/clothes'}><div>Clothes</div></Link>
+                            <Link to={'/shoes'}><div>Shoes</div></Link>
+                            <Link to={'/furniture'}><div>Furniture</div></Link>
+                            <Link to={'/electronics'}><div>Electronics</div></Link>
                         </div>
                         <div className='social'>
                             <img src={linkedin} alt='linkedin'/>
@@ -98,11 +97,11 @@ const Footer = () => {
                             <div>Best sellers</div>
                             <div>Recently viewed</div>
                             <div>Popular this week</div>
-                            <div>All products</div>
+                            <Link to={'/all'}><div>All products</div></Link>
                         </div>
                         <div>
                             <div className='item-name'>Our company</div>
-                            <div>About us</div>
+                            <Link to={'/home'}><div>About us</div></Link>
                             <div>Vacancies</div>
                             <div>Contact us</div>
                             <div>Privacy</div>

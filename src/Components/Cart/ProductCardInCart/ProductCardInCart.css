@@ -1,0 +1,10 @@
+.Product-card-in-cart {
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 15% 50% 25% 10%;
+}
+
+.Product-card-in-cart img {
+    width: 100px;
+}

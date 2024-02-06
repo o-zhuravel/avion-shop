@@ -1,0 +1,35 @@
+.product {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.product .backToAllProducts {
+    padding: 10px;
+    color: #22202E;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product .backToAllProducts:hover {
+    color: #4E4D93;
+}
+
+.product .product-info {
+    display: grid;
+    grid-template-columns: 38% 58%;
+    grid-column-gap: 4%;
+}
+
+.product .product-info #carouselExample {
+    width: 500px;
+}
+
+.product .product-info #carouselExample .carousel-item img {
+    width: 500px;
+}
+
+.product .product-info .description {
+
+}

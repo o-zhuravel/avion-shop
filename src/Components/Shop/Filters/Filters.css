@@ -1,0 +1,41 @@
+.filters {
+    background-color: rgba(208, 208, 208, 0.49);
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 10px 0;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-row-gap: 5%;
+}
+
+.filters .sorting {
+
+}
+
+.filters .sorting select {
+    margin: 0 20px;
+}
+
+.filters .filtering {
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.filters .filtering  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.filters .filtering .price-filtering {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .filtering .price-filtering label {
+    font-size: 12px;
+    text-align: left;
+}
+
+.filters .filtering .category-filtering {
+    display: flex;
+    flex-direction: column;
+}

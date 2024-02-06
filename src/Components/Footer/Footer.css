@@ -18,6 +18,17 @@
     font-size: 20px;
 }
 
+.Footer .footer-top .social {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content:left;
+}
+
 .Footer .footer-top img {
     width: 30px;
     padding-right: 10px;
@@ -44,7 +55,14 @@
 }
 
 .Footer-shot .social {
-
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content:left;
 }
 
 .Footer-shot .social img {

@@ -1,10 +1,11 @@
 import './Header.css';
-import search from '../../assets/image/search.svg';
 import cart from '../../assets/image/shopping--cart.svg';
 import profile from '../../assets/image/user--avatar.svg';
 import menu from '../../assets/image/menu.svg';
 import {useRef, useState} from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {setSearchingWord} from "../../data/reducers/shopReducer";
 
 const Header = () => {
 
@@ -20,19 +21,43 @@ const Header = () => {
 
     let menuDiv = useRef();
 
-    function showMenu () {
+    function toggleMenu () {
+        let el = document.querySelector('.menu');
+        let st = window.getComputedStyle(el).display;
+        console.log(st);
+        if (st === 'none') {
             menuDiv.current.style.display = 'block';
+        }
+        else {
+            menuDiv.current.style.display = 'none';
+        }
     }
 
-    function closeMenu () {
-        menuDiv.current.style.display = 'none';
+    let dispatch = useDispatch();
+    let searchingWord = useSelector(state => state.shop.searchingWord);
+    let navigator = useNavigate();
+
+    const searchingHandler = (e) => {
+        console.log(e.target.value);
+        dispatch(setSearchingWord(e.target.value));
+    }
+
+    const searching = () => {
+        console.log('search');
+        console.log(searchingWord);
+        if (searchingWord) {
+            navigator('/search')
+        }
     }
 
     if (bodyW > 500) {
         return (
             <div className='Header'>
                 <div className='header-top'>
-                    <img src={search} alt='search'/>
+                    <div className='search-line'>
+                        <input type='text' placeholder='Enter product' onChange={(e) => searchingHandler(e)}/>
+                        <div className='btn' onClick={searching}></div>
+                    </div>
                     <NavLink to='/'><div className='logo'>Avion</div></NavLink>
                     <div className='user-container'>
                         <NavLink to='/cart'><img src={cart} alt='cart'/></NavLink>
@@ -41,10 +66,10 @@ const Header = () => {
                 </div>
                 <div className='header-bottom'>
                     <NavLink to='/all'><div className='category-item'>All</div></NavLink>
-                    <NavLink to='/chairs'><div className='category-item'>Chairs</div></NavLink>
-                    <NavLink to='/tables'><div className='category-item'>Tables</div></NavLink>
-                    <NavLink to='/tableware'><div className='category-item'>Tableware</div></NavLink>
-                    <NavLink to='/ceramics'><div className='category-item'>Ceramics</div></NavLink>
+                    <NavLink to='/clothes'><div className='category-item'>Clothes</div></NavLink>
+                    <NavLink to='/shoes'><div className='category-item'>Shoes</div></NavLink>
+                    <NavLink to='/furniture'><div className='category-item'>Furniture</div></NavLink>
+                    <NavLink to='/electronics'><div className='category-item'>Electronics</div></NavLink>
                 </div>
             </div>
         )
@@ -54,16 +79,21 @@ const Header = () => {
             <div className='Header-shot'>
                <div className='logo-text-shot'>Avion</div>
                 <div className='menu-container'>
-                    <img src={search} alt='search'/>
-                    <img src={menu} alt='menu' onClick={showMenu}/>
+                    <div className='search-line'>
+                        <input type='text' placeholder='Enter product' onChange={(e) => searchingHandler(e)}/>
+                        <div className='btn' onClick={searching}></div>
+                    </div>
+                    <img src={menu} alt='menu' onClick={toggleMenu}/>
                 </div>
                 <div className='menu' ref={menuDiv}>
-                    <NavLink to='/all'><div className='category-item'>All</div></NavLink>
-                    <NavLink to='/chairs'><div className='category-item'>Chairs</div></NavLink>
-                    <NavLink to='/tables'><div className='category-item'>Tables</div></NavLink>
-                    <NavLink to='/tableware'><div className='category-item'>Tableware</div></NavLink>
-                    <NavLink to='/ceramics'><div className='category-item'>Ceramics</div></NavLink>
-                    <div onClick={closeMenu}>X</div>
+                    <NavLink to='/'><div className='category-item'>Home</div></NavLink>
+                    <NavLink to='/all'><div className='category-item'>All products</div></NavLink>
+                    <NavLink to='/clothes'><div className='category-item'>Clothes</div></NavLink>
+                    <NavLink to='/shoes'><div className='category-item'>Shoes</div></NavLink>
+                    <NavLink to='/furniture'><div className='category-item'>Furniture</div></NavLink>
+                    <NavLink to='/electronics'><div className='category-item'>Electronics</div></NavLink>
+                    <NavLink to='/cart'><div className='category-item cart-item'>Cart</div></NavLink>
+                    <div onClick={toggleMenu} className='close'>X</div>
                 </div>
             </div>
         )

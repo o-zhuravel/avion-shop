@@ -1,0 +1,12 @@
+.Preloader {
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.Preloader img {
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
