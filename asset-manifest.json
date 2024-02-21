@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/avion-shop/static/css/main.5088e40f.css",
-    "main.js": "/avion-shop/static/js/main.c38adf3e.js",
+    "main.js": "/avion-shop/static/js/main.ae7a81a5.js",
     "static/media/805.gif": "/avion-shop/static/media/805.9d7a6b2a42ed65d94af2.gif",
     "static/media/rightPhoto2.jpg": "/avion-shop/static/media/rightPhoto2.74d1c96602178181c56a.jpg",
     "static/media/Satoshi-Regular.otf": "/avion-shop/static/media/Satoshi-Regular.811ccb0b5af1892a71df.otf",
@@ -26,10 +26,10 @@
     "static/media/purchase.svg": "/avion-shop/static/media/purchase.284c07e5f1627d6f7fbfca343ebb930e.svg",
     "static/media/menu.svg": "/avion-shop/static/media/menu.6ad0fc9e10a5e06b0673baa7980428c9.svg",
     "main.5088e40f.css.map": "/avion-shop/static/css/main.5088e40f.css.map",
-    "main.c38adf3e.js.map": "/avion-shop/static/js/main.c38adf3e.js.map"
+    "main.ae7a81a5.js.map": "/avion-shop/static/js/main.ae7a81a5.js.map"
   },
   "entrypoints": [
     "static/css/main.5088e40f.css",
-    "static/js/main.c38adf3e.js"
+    "static/js/main.ae7a81a5.js"
   ]
 }
