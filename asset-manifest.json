@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/avion-shop/static/css/main.5088e40f.css",
+    "main.js": "/avion-shop/static/js/main.c38adf3e.js",
+    "static/media/805.gif": "/avion-shop/static/media/805.9d7a6b2a42ed65d94af2.gif",
+    "static/media/rightPhoto2.jpg": "/avion-shop/static/media/rightPhoto2.74d1c96602178181c56a.jpg",
+    "static/media/Satoshi-Regular.otf": "/avion-shop/static/media/Satoshi-Regular.811ccb0b5af1892a71df.otf",
+    "static/media/errorPicture.jpg": "/avion-shop/static/media/errorPicture.2bab18bdd30ed9945bef.jpg",
+    "static/media/ClashDisplay-Regular.otf": "/avion-shop/static/media/ClashDisplay-Regular.ccc51e2a3c40ce9bca53.otf",
+    "static/media/rightPhoto.jpg": "/avion-shop/static/media/rightPhoto.56b5b49afca080aad523.jpg",
+    "static/media/logo--skype.svg": "/avion-shop/static/media/logo--skype.7fd4adbfa64c87ba33f9535c14ca75b8.svg",
+    "static/media/user--avatar.svg": "/avion-shop/static/media/user--avatar.6e85d852be13383fcf17cccaa428e934.svg",
+    "static/media/logo--pinterest.svg": "/avion-shop/static/media/logo--pinterest.085fbb597aaa5869daca352a23610e7c.svg",
+    "static/media/add-to-cart.svg": "/avion-shop/static/media/add-to-cart.6c1241586d2f2374d91009f6d86ce180.svg",
+    "static/media/deleteImg.svg": "/avion-shop/static/media/deleteImg.49d53840c66d84ddce078593fb5619aa.svg",
+    "static/media/logo--twitter.svg": "/avion-shop/static/media/logo--twitter.68a59575a85f423085eb0db0fae087e7.svg",
+    "static/media/sprout.svg": "/avion-shop/static/media/sprout.551d970e40e19b993df2d80c9b47ecb4.svg",
+    "static/media/checkmark--outline.svg": "/avion-shop/static/media/checkmark--outline.2c85aeacb16e423585a83f25ed2dc78a.svg",
+    "static/media/logo--facebook.svg": "/avion-shop/static/media/logo--facebook.84c4cc5d8c788419ce6f46baf6d567a7.svg",
+    "static/media/search.svg": "/avion-shop/static/media/search.437fdb1e1ea70262e329.svg",
+    "index.html": "/avion-shop/index.html",
+    "static/media/shopping--cart.svg": "/avion-shop/static/media/shopping--cart.3091f24b98eeeb362f0e901df37a5b39.svg",
+    "static/media/logo--linkedin.svg": "/avion-shop/static/media/logo--linkedin.7dbcfa54ca7864b28ca4f6bfce656da3.svg",
+    "static/media/close-square.svg": "/avion-shop/static/media/close-square.2a05c7e52804374a6134475bd23649a5.svg",
+    "static/media/logo--instagram.svg": "/avion-shop/static/media/logo--instagram.84ad051a9aef9e2e59bdf1a91db18fc5.svg",
+    "static/media/purchase.svg": "/avion-shop/static/media/purchase.284c07e5f1627d6f7fbfca343ebb930e.svg",
+    "static/media/menu.svg": "/avion-shop/static/media/menu.6ad0fc9e10a5e06b0673baa7980428c9.svg",
+    "main.5088e40f.css.map": "/avion-shop/static/css/main.5088e40f.css.map",
+    "main.c38adf3e.js.map": "/avion-shop/static/js/main.c38adf3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5088e40f.css",
+    "static/js/main.c38adf3e.js"
+  ]
+}
