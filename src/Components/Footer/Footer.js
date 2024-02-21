@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className='item-name'>Our company</div>
-                        <Link to={'/home'}><div>About us</div></Link>
+                        <Link to={'/'}><div>About us</div></Link>
                         <div>Vacancies</div>
                         <div>Contact us</div>
                         <div>Privacy</div>
@@ -101,7 +101,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <div className='item-name'>Our company</div>
-                            <Link to={'/home'}><div>About us</div></Link>
+                            <Link to={'/'}><div>About us</div></Link>
                             <div>Vacancies</div>
                             <div>Contact us</div>
                             <div>Privacy</div>

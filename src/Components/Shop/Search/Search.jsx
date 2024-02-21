@@ -20,11 +20,29 @@ const Search = () => {
         dispatch(toggleIsFetching(true));
         axios.get(`https://api.escuelajs.co/api/v1/products/?title=${searchingWord}`)
             .then(response => {
-                console.log(response.data)
-                dispatch(setFoundProduct(response.data));
-                dispatch(toggleIsFetching(false));
+                console.log(response.data);
+                    dispatch(setFoundProduct(response.data));
+                    dispatch(toggleIsFetching(false));
                 console.log(foundProducts);
             })
+            .catch(function (error) {
+                if (error.response) {
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                    console.log(error.response.headers);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                } else if (error.request) {
+                    console.log(error.request);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                } else {
+                    console.log('Error', error.message);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                }
+                console.log(error.config);
+            });
     }, [searchingWord]);
 
     const backToAllProducts = () => {
@@ -39,7 +57,10 @@ const Search = () => {
                 <div onClick={() => backToAllProducts()} className='backToAllProducts'>Back to all products</div>
                 <div className='products'>
                     {
-                        isFetching ? <Preloader/> : foundProducts.map(product => <ProductCard key={product.id} product={product}/>)
+                        !isFetching ? foundProducts.map(product => <ProductCard key={product.id} product={product}/>) : <Preloader/>
+                    }
+                    {
+                        !isFetching && foundProducts.length === 0 ? <div className='not-found-product'>Sorry, this product is not found</div> : foundProducts.map(product => <ProductCard key={product.id} product={product}/>)
                     }
                 </div>
             </div>

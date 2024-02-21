@@ -5,6 +5,7 @@ const cartSlice = createSlice( {
     initialState: {
         productsInCart: [],
         isFetching: false,
+        subtotal: 0,
     },
     reducers: {
         setProductsInCart(state, action) {
@@ -28,8 +29,18 @@ const cartSlice = createSlice( {
                 }
             });
         },
+        setCounterFromCart(state, action) {
+            let id = action.payload.id;
+            console.log(id);
+            state.productsInCart.forEach(el => {
+                if (el.id === id) {
+                    el.counter = action.payload.count;
+                    console.log(el.counter);
+                }
+            });
+        },
         removeProductAtCart(state, action) {
-            let {id} = action.payload;
+            let id = action.payload;
             return {...state, productsInCart: [...state.productsInCart.filter(el => el.id !== id)]}
         },
         synchronizationWithLS(state) {
@@ -43,9 +54,28 @@ const cartSlice = createSlice( {
         },
         updateLS(state) {
             localStorage.setItem('productsInCart', JSON.stringify(state.productsInCart));
-        }
+        },
+        calculateTotalPerProduct (state, action) {
+            let id = action.payload.id;
+            console.log(id);
+            state.productsInCart.forEach(el => {
+                if (el.id === id) {
+                    el.totalPrice = action.payload.counter * action.payload.price;
+                    console.log(el.totalPrice);
+                }
+            });
+        },
+        calculateSubtotal (state) {
+            let sum = 0;
+            state.productsInCart.forEach(el => {
+                sum += el.totalPrice;
+            });
+            console.log(sum);
+            return {...state, subtotal: sum}
+        },
     }
 })
 
-export const {setProductsInCart, setCounter, removeProductAtCart, synchronizationWithLS, updateLS} = cartSlice.actions;
+export const {setProductsInCart, setCounter, removeProductAtCart, synchronizationWithLS
+    , updateLS, setCounterFromCart, calculateTotalPerProduct, calculateSubtotal, } = cartSlice.actions;
 export default cartSlice.reducer;

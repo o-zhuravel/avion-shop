@@ -1,4 +1,4 @@
-import './AllProducts.css';
+import '../shop.css';
 import Header from "../../Header/Header";
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
@@ -23,8 +23,25 @@ const AllProducts = () => {
                     dispatch(setProducts(response.data.splice(0, 43)));
                     dispatch(toggleIsFetching(false));
                     console.log(allProducts)
-
                 })
+                .catch(function (error) {
+                    if (error.response) {
+                        console.log(error.response.data);
+                        console.log(error.response.status);
+                        console.log(error.response.headers);
+                        alert('Server error. Try refreshing the page or returning to the main page');
+                        window.location.reload();
+                    } else if (error.request) {
+                        console.log(error.request);
+                        alert('Server error. Try refreshing the page or returning to the main page');
+                        window.location.reload();
+                    } else {
+                        console.log('Error', error.message);
+                        alert('Server error. Try refreshing the page or returning to the main page');
+                        window.location.reload();
+                    }
+                    console.log(error.config);
+                });
     }, [isSorting]);
 
 

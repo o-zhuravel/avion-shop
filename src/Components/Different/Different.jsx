@@ -11,15 +11,13 @@ const Different = () => {
             <div className='different'>
                 <div>
                     <img src={delivery} alt='delivery'/>
-                    <div>Next day as standard</div>
-                    <div>Order before 3pm and get your order
-                        the next day as standard</div>
+                    <div>Safe and fast delivery of every order. </div>
+                    <div>Our delivery service operates efficiently, so you can enjoy your new items as soon as possible.</div>
                 </div>
                 <div>
                     <img src={checkmark} alt='checkmark'/>
-                    <div>Made by true artisans</div>
-                    <div>Handmade crafted goods made with
-                        real passion and craftmanship</div>
+                    <div>Special attention to quality and comfort. </div>
+                    <div>All our clothing is made from high-quality materials.</div>
                 </div>
                 <div>
                     <img src={purchase} alt='purchase'/>

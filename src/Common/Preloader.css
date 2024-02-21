@@ -3,6 +3,10 @@
     margin: auto;
     text-align: center;
     align-self: center;
+    /*padding: 10%;*/
+    /*box-sizing: border-box;*/
+    grid-column: 1/6;
+    justify-self: center;
 }
 
 .Preloader img {

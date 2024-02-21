@@ -1,0 +1,23 @@
+.Error-page {
+    min-height: 100vh;
+    display: flex;
+}
+
+.Error-page .error-text {
+    padding: 5%;
+    font-size: 36px;
+    color: #2A254B;
+}
+
+.Error-page img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .Error-page {
+        flex-direction: column-reverse;
+    }
+    .Error-page .error-text {
+        font-size: 26px;
+    }
+}

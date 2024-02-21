@@ -8,9 +8,31 @@
     margin: auto;
 }
 
+.header-top .user-container {
+    display: flex;
+    align-items: center;
+}
+
 .header-top .user-container img {
     padding-right: 10px;
     box-sizing: border-box;
+}
+
+.header-top .user-container .whole-cart {
+    width: 40px;
+    height: 25px;
+}
+
+.header-top .user-container .number-prod-in-cart {
+    position: relative;
+    top: -25px;
+    left: 10px;
+    background-color: #4E4D93;
+    color: white;
+    font-size: 10px;
+    width: 14px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .header-top .search-line {

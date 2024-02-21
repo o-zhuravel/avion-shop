@@ -2,9 +2,18 @@
     padding: 10px 0;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 15% 50% 25% 10%;
+    grid-template-columns: 15% 50% 22% 10% 3%;
 }
 
 .Product-card-in-cart img {
     width: 100px;
+}
+
+.Product-card-in-cart .input-counter {
+    width: 60px;
+    height: 30px;
+}
+
+.Product-card-in-cart .delete-img {
+    width: 20px;
 }

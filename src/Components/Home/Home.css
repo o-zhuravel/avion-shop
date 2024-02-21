@@ -18,7 +18,16 @@
     color: white;
 }
 
+.Home .pres-cont .presentation .img-container {
+    width: 50%;
+}
+
+.Home .pres-cont .presentation img {
+    width: 100%;
+}
+
 .Home .pres-cont .presentation .presentation-container {
+    width: 50%;
     font-size: 32px;
     padding: 60px 60px;
     box-sizing: border-box;
@@ -48,6 +57,13 @@
 .Home .new-products {
     padding: 50px 5%;
     box-sizing: border-box;
+
+}
+
+.Home .new-products .new-prod-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -64,6 +80,26 @@
 }
 
 .story-container .story {
-    padding: 20px 5%;
+    width: 50%;
+    padding: 20px 5% 0 20px;
     box-sizing: border-box;
+}
+
+.story-container .rightImage {
+    width: 50%;
+}
+
+.story-container .rightImage img {
+    width: max-content;
+}
+
+@media (max-width: 790px) {
+    .Home .pres-cont .presentation {
+        align-self: center;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: #2A254B;
+        color: white;
+    }
 }

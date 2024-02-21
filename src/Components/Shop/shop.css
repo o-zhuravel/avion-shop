@@ -1,0 +1,14 @@
+.shop {
+    display: grid;
+    grid-template-rows: minmax(10vh, auto) minmax(80%, max-content);
+    min-height: 100vh;
+
+}
+
+.shop .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin: 50px;
+}

@@ -12,14 +12,16 @@
 
 .Cart .cart-container .header-cart-table {
     display: grid;
-    grid-template-columns: 65% 25% 10%;
+    grid-template-columns: 65% 22% 13%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
     padding: 10px 0;
     box-sizing: border-box;
     margin: 0 0 10px 0;
 }
 
-
+.Cart .cart-container .header-cart-table .total-headline {
+    justify-self: start;
+}
 
 .Cart .cart-container .footer-cart-table {
     display: flex;

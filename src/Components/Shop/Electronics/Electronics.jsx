@@ -1,14 +1,13 @@
-import './Electronics.css'
+import '../shop.css';
 
 import Header from "../../Header/Header";
 import Preloader from "../../../Common/Preloader";
 import ProductCard from "../ProductCard/ProductCard";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {setElectronics, setProducts, toggleIsFetching} from "../../../data/reducers/shopReducer";
+import {setElectronics, toggleIsFetching} from "../../../data/reducers/shopReducer";
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
-import Filters from "../Filters/Filters";
 import Banner from "../../Banner/Banner";
 
 const Electronics = () => {
@@ -24,6 +23,24 @@ const Electronics = () => {
                 dispatch(toggleIsFetching(false));
                 console.log(electronics)
             })
+            .catch(function (error) {
+                if (error.response) {
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                    console.log(error.response.headers);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                } else if (error.request) {
+                    console.log(error.request);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                } else {
+                    console.log('Error', error.message);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                }
+                console.log(error.config);
+            });
     }, []);
 
     return (

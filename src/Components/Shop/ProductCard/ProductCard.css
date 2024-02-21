@@ -3,7 +3,6 @@
     background-color: rgba(215, 215, 215, 0.2);
     box-sizing: border-box;
     padding: 20px;
-    margin: 0 20px 20px 20px;
     display: grid;
     grid-template-rows: 180px 80px auto auto;
     grid-row-gap: 10px;

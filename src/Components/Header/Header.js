@@ -42,6 +42,12 @@ const Header = () => {
         dispatch(setSearchingWord(e.target.value));
     }
 
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            searching();
+        }
+    })
+
     const searching = () => {
         console.log('search');
         console.log(searchingWord);
@@ -49,6 +55,8 @@ const Header = () => {
             navigator('/search')
         }
     }
+
+    let prodInCart = useSelector(state => state.cart.productsInCart.length);
 
     if (bodyW > 500) {
         return (
@@ -60,7 +68,10 @@ const Header = () => {
                     </div>
                     <NavLink to='/'><div className='logo'>Avion</div></NavLink>
                     <div className='user-container'>
-                        <NavLink to='/cart'><img src={cart} alt='cart'/></NavLink>
+                        <div className='whole-cart'>
+                            <NavLink to='/cart'><img src={cart} alt='cart'/></NavLink>
+                            <div className='number-prod-in-cart'>{prodInCart}</div>
+                        </div>
                         <img src={profile} alt='user'/>
                     </div>
                 </div>

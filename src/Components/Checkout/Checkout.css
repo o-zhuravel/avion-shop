@@ -2,5 +2,45 @@
     background-color: #F9F9F9;
     padding: 50px 10%;
     box-sizing: border-box;
-    min-height: 70vh;
+    min-height: 90vh;
+}
+
+.Checkout-container .checkout .price-delivery {
+    background-color: #2A254B;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.Checkout-container .checkout .form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Checkout-container .checkout .form .container1 {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.Checkout-container .checkout .form input {
+    margin: 5px 0;
+    width: 100%;
+}
+
+.Checkout-container .checkout .submit-btn {
+    width: max-content;
+    margin-left: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #2A254B;
+    transition: 0.5s;
+}
+
+.Checkout-container .checkout .submit-btn:active {
+    background-color: #4E4D93;
+    scale: 1.1;
 }

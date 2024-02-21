@@ -25,6 +25,24 @@ const Product = () => {
                 dispatch(setProduct(response.data));
                 dispatch(toggleFetching(false));
             })
+            .catch(function (error) {
+                if (error.response) {
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                    console.log(error.response.headers);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                } else if (error.request) {
+                    console.log(error.request);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                } else {
+                    console.log('Error', error.message);
+                    alert('Server error. Try refreshing the page or returning to the main page');
+                    window.location.reload();
+                }
+                console.log(error.config);
+            });
     }, []);
 
     console.log(selectProduct);

@@ -2,7 +2,6 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
-import Our_story from "./Components/Our_story/Our_story";
 import Cart from "./Components/Cart/Cart";
 import AllProducts from "./Components/Shop/AllProducts/AllProducts";
 import Clothes from "./Components/Shop/Clothes/Clothes";
@@ -10,6 +9,7 @@ import Clothes from "./Components/Shop/Clothes/Clothes";
 import Electronics from "./Components/Shop/Electronics/Electronics";
 import Shoes from "./Components/Shop/Shoes/Shoes";
 import Furniture from "./Components/Shop/Furniture/Furniture";
+import ErrorPage from "./Common/ErrorPage/ErrorPage";
 
 import Product from "./Components/Shop/Product/Product";
 import {useDispatch, useSelector} from "react-redux";
@@ -35,8 +35,7 @@ function App() {
     <div className="App">
       <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/*' element={<div>Error</div>}/>
-          <Route path='/our_story' element={<Our_story/>}/>
+          <Route path='/*' element={<ErrorPage/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/all' element={<AllProducts/>}/>
 

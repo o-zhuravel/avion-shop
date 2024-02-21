@@ -17,3 +17,14 @@
     justify-content: center;
     /*margin: auto;*/
 }
+
+.join-container .join .email .sign-btn {
+    padding: 5px 10px;
+    background-color: #2A254B;
+    color: white;
+    cursor: pointer;
+}
+
+.join-container .join .email .sign-btn:active {
+    background-color: #4E4D93;
+}
